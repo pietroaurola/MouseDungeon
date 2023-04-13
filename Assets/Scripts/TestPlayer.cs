@@ -15,17 +15,21 @@ public class TestPlayer : MonoBehaviour
     public float sensY;
     float xRotation;
 
+    private Vector3 mousePos;
+
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
+
+        LookAt();
     }
 
     void Move()
@@ -58,6 +62,12 @@ public class TestPlayer : MonoBehaviour
 
         //ROTATION2
            
+    }
+
+    void LookAt()
+    {
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.LookAt(new Vector3(mousePos.x, transform.position.y, mousePos.z));
     }
 
 }
