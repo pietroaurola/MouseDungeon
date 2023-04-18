@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Floor
+  m_Name: Obstacle
   m_Shader: {fileID: 4800000, guid: d36eaadd6c119e74799b9ff689f683b1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -73,6 +73,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.6792453, g: 0.65392345, b: 0.52224994, a: 1}
+    - _Color: {r: 0.6320754, g: 0.4442417, b: 0.4442417, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
